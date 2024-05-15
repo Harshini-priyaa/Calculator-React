@@ -82,3 +82,20 @@ button:hover{
   background-color: #803D3B;
   color: #000;
 }
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .displayValue {
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
