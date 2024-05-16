@@ -5,7 +5,10 @@ body{
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #FFF2D7;
-  overflow: hidden;
+}
+.container{
+  display: flex;
+  align-items: center;
 }
 
 h1{
@@ -17,13 +20,42 @@ h1{
 }
 .calculator{
   width: 330px;
-  margin: 6% auto;
+  margin-left: 20%;
+  margin-top: 6%;
   border:none;
   border-radius: 5%;
   padding: 50px;
   background-color: #D8AE7E;
   box-shadow: 15px 15px 15px#F8C794;
 }
+.history {
+  width: 330px;
+  
+  margin-left: 6%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border:none;
+  border-radius: 5%;
+  padding: 50px;
+  background-color: #D8AE7E;
+  box-shadow: 15px 15px 15px#F8C794;
+}
+
+.history h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 .displayValue{
   font-size: 24px;
   margin-bottom: 10px;

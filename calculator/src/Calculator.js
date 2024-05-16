@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 class Calculator extends React.Component{
+
   constructor(props) {
    super(props);
    this.state = {
      displayValue: "", 
+     history: JSON.parse(localStorage.getItem('calculatorHistory')) || [],
    };
 
+ }
+
+ saveHistoryToLocalStorage =() => {
+  localStorage.setItem('calculatorHistory', JSON.stringify(this.state.history));
  }
 
  handleButtonClick = (value) => {
@@ -24,10 +30,17 @@ class Calculator extends React.Component{
 
 };
 
+handleHistoryItemClick = (expression) => {
+  this.setState({ displayValue: expression });
+};
+
 calculateResult = () => {
   try {
     const result = eval(this.state.displayValue);
-    this.setState({ displayValue: result });
+    this.setState((prevState) => ({
+      displayValue: result,
+      history: [...prevState.history,{expression: prevState.displayValue,result: result}],
+    }));
   } 
   catch (error) {
     this.setState({ displayValue: "Error" });
@@ -46,6 +59,7 @@ clearDisplay = () => {
     return (
 
       <>   
+    <div className='container'>
       <div className="calculator">
       <h1>CALCULATOR</h1>
         <div className="displayValue">{this.state.displayValue}</div>
@@ -73,6 +87,19 @@ clearDisplay = () => {
           <button onClick={() => this.handleButtonClick('=')} className="equals">=</button>
         </div>
       </div>
+      <div className='history'>
+            <h2>History</h2>
+            <ul>
+              {this.state.history.map((calculation, index) => (
+                <li key={index} onClick={() => this.handleHistoryItemClick(calculation.expression)}>
+                  {calculation.expression} = {calculation.result}
+                </li>
+              ))}
+            </ul>
+      </div>
+
+    </div>
+
 
       </>
 
