@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Harshini-priyaa/Calculator-React/static/css/main.8deac1fe.css",
-    "main.js": "/Harshini-priyaa/Calculator-React/static/js/main.b0556aa2.js",
-    "static/js/453.83bdee10.chunk.js": "/Harshini-priyaa/Calculator-React/static/js/453.83bdee10.chunk.js",
-    "index.html": "/Harshini-priyaa/Calculator-React/index.html",
-    "main.8deac1fe.css.map": "/Harshini-priyaa/Calculator-React/static/css/main.8deac1fe.css.map",
-    "main.b0556aa2.js.map": "/Harshini-priyaa/Calculator-React/static/js/main.b0556aa2.js.map",
-    "453.83bdee10.chunk.js.map": "/Harshini-priyaa/Calculator-React/static/js/453.83bdee10.chunk.js.map"
+    "main.css": "/Calculator-React/static/css/main.8deac1fe.css",
+    "main.js": "/Calculator-React/static/js/main.3099380b.js",
+    "static/js/453.83bdee10.chunk.js": "/Calculator-React/static/js/453.83bdee10.chunk.js",
+    "index.html": "/Calculator-React/index.html",
+    "main.8deac1fe.css.map": "/Calculator-React/static/css/main.8deac1fe.css.map",
+    "main.3099380b.js.map": "/Calculator-React/static/js/main.3099380b.js.map",
+    "453.83bdee10.chunk.js.map": "/Calculator-React/static/js/453.83bdee10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8deac1fe.css",
-    "static/js/main.b0556aa2.js"
+    "static/js/main.3099380b.js"
   ]
 }
